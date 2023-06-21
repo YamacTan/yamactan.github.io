@@ -1,0 +1,1 @@
+# yamactan.github.io
