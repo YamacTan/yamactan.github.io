@@ -74,3 +74,29 @@ export interface Certificate {
   credentialUrl?: string;
   credentialId?: string;
 }
+
+// New Skills System - Expertise Layers
+export interface ExpertiseTier1Skill {
+  name: string;
+  description: string;
+  icon: string;
+  achievements: string[];
+  relatedTech: string[];
+}
+
+export interface CoreCompetency {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  technologies: string[];
+  span?: 'col-span-1' | 'col-span-2' | 'lg:col-span-2';
+}
+
+export interface SupportingSkill {
+  name: string;
+  icon: string;
+  category: 'programming' | 'databases' | 'devtools';
+}
+
+export type SkillLevel = 'expert' | 'advanced' | 'proficient' | 'intermediate';
