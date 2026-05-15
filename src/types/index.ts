@@ -44,4 +44,16 @@ export interface TimelineEntry {
   position: string;
   period: string;
   current?: boolean;
+  details?: string[];
+  technologies?: string[];
+}
+
+export interface EducationEntry {
+  id: string;
+  school: string;
+  degree: string;
+  field: string;
+  period: string;
+  details?: string[];
+  skills?: string[];
 }

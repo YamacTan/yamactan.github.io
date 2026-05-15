@@ -2,8 +2,10 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../layout/SectionWrapper';
 import { ScrollReveal } from '../effects/ScrollReveal';
 import { BentoCard } from '../common/BentoCard';
+import { ExpandableTimelineCard } from '../common/ExpandableTimelineCard';
 import { skillsData } from '../../data/skills';
 import { experienceData } from '../../data/experience';
+import { educationData } from '../../data/education';
 
 export const About = () => {
   return (
@@ -71,7 +73,7 @@ export const About = () => {
 
       {/* Timeline - Experience */}
       <ScrollReveal>
-        <div className="space-y-8">
+        <div className="space-y-6">
           <div className="flex items-center gap-3">
             <div className="h-8 w-1 bg-gradient-to-b from-[#FF6B00] to-transparent rounded-full" />
             <h3 className="text-xl md:text-2xl font-semibold text-white">
@@ -81,48 +83,42 @@ export const About = () => {
 
           <div className="space-y-3">
             {experienceData.map((entry, index) => (
-              <motion.div
+              <ExpandableTimelineCard
                 key={entry.id}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div
-                  className="
-                    group p-4 md:p-6 rounded-xl
-                    bg-neutral-900/40 backdrop-blur-md
-                    border border-white/10
-                    hover:border-[#FF6B00]/30 hover:bg-neutral-900/60
-                    transition-all duration-300
-                    cursor-default
-                  "
-                >
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-white text-lg">
-                        {entry.position}
-                      </h4>
-                      <p className="text-sm text-slate-400">{entry.company}</p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <p className="text-sm text-slate-400 font-mono">
-                        {entry.period}
-                      </p>
-                      {entry.current && (
-                        <span
-                          className="
-                            inline-block px-3 py-1 text-xs font-medium rounded-full
-                            bg-[#FF6B00]/10 text-[#FF6B00] border border-[#FF6B00]/30
-                          "
-                        >
-                          Active
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
+                title={entry.position}
+                subtitle={entry.company}
+                period={entry.period}
+                details={entry.details}
+                technologies={entry.technologies}
+                isCurrent={entry.current}
+                index={index}
+              />
+            ))}
+          </div>
+        </div>
+      </ScrollReveal>
+
+      {/* Timeline - Education */}
+      <ScrollReveal>
+        <div className="space-y-6">
+          <div className="flex items-center gap-3">
+            <div className="h-8 w-1 bg-gradient-to-b from-[#FF6B00] to-transparent rounded-full" />
+            <h3 className="text-xl md:text-2xl font-semibold text-white">
+              Education
+            </h3>
+          </div>
+
+          <div className="space-y-3">
+            {educationData.map((entry, index) => (
+              <ExpandableTimelineCard
+                key={entry.id}
+                title={entry.degree}
+                subtitle={`${entry.school} • ${entry.field}`}
+                period={entry.period}
+                details={entry.details}
+                technologies={entry.skills}
+                index={index}
+              />
             ))}
           </div>
         </div>
