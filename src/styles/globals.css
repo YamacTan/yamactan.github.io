@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root color scheme */
+:root {
+  --color-bg-primary: #0f0f0f;
+  --color-bg-secondary: #1a1a1a;
+  --color-accent: #FF6B00;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#0f0f0f] text-[#f8fafc];
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  @apply box-border;
+}
+
+/* Utility classes */
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-lg;
+  }
+
+  .glass-effect-md {
+    @apply backdrop-blur-md bg-white/[0.08] border border-white/[0.15] rounded-xl;
+  }
+
+  .glow-border {
+    @apply border border-accent;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.3), inset 0 0 20px rgba(255, 107, 0, 0.1);
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 bg-accent text-black font-semibold rounded-lg 
+           transition-all duration-300 cursor-pointer
+           hover:shadow-glow-orange hover:scale-105 
+           active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-accent-outline {
+    @apply px-6 py-3 border-2 border-accent text-accent rounded-lg 
+           transition-all duration-300 cursor-pointer
+           hover:bg-accent hover:text-black 
+           hover:shadow-glow-orange active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 border border-slate-700 text-slate-400 rounded-md 
+           transition-all duration-300 cursor-pointer
+           hover:border-accent hover:text-accent hover:shadow-glow-orange;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 
+           hover:shadow-glow-orange hover:scale-105 
+           hover:border-accent;
+  }
+
+  .section-container {
+    @apply min-h-screen py-20 px-4 md:px-8 flex items-center justify-center;
+  }
+
+  .tech-card {
+    @apply glass-effect-md p-6 rounded-xl 
+           border border-slate-700 
+           transition-all duration-300 
+           hover:border-accent hover:shadow-glow-orange 
+           hover:scale-105 hover:bg-white/[0.12];
+  }
+
+  .typewriter {
+    font-family: 'Fira Code', monospace;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  /* Smooth scroll anchor behavior */
+  .scroll-anchor {
+    scroll-margin-top: 80px;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(135deg, #FF6B00, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Input styles */
+  input,
+  textarea {
+    @apply bg-white/5 border border-white/10 rounded-lg px-4 py-2
+           text-white placeholder-slate-500
+           transition-all duration-300
+           focus:outline-none focus:border-accent focus:shadow-glow-orange;
+  }
+
+  textarea {
+    @apply resize-none;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f0f0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #FF6B00;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E55A00;
+  }
+}
+
+/* Smooth scroll for links */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism effect refinement */
+.backdrop-glass {
+  backdrop-filter: blur(10px) brightness(1.05);
+}
+
+/* Animation delay utilities */
+@layer utilities {
+  @for $i from 0 to 10 {
+    .delay-#{$i} {
+      animation-delay: calc($i * 0.1s);
+    }
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .section-container {
+    @apply py-12;
+  }
+}
