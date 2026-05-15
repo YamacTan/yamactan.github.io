@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+          --color-bg-primary: #0f0f0f;
+          --color-accent: #FF6B00;
+        }
+    </style>
+</head>
+<body class="bg-[#0f0f0f] text-[#f8fafc]">
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <div class="space-y-8 max-w-2xl">
+            <h1 class="text-5xl font-bold text-gradient">Portfolio Test</h1>
+            <p class="text-xl text-slate-400">
+                If you see this in dark background with orange accents, styles work!
+            </p>
+            
+            <!-- Test Button -->
+            <button class="px-6 py-3 bg-[#FF6B00] text-black font-semibold rounded-lg hover:shadow-[0_0_20px_rgba(255,107,0,0.4)] hover:scale-105 transition-all">
+                Let's Build
+            </button>
+            
+            <!-- Test Cards -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white/5 border border-white/10 rounded-lg p-6 hover:border-[#FF6B00] hover:shadow-[0_0_20px_rgba(255,107,0,0.4)] transition-all">
+                    <div class="text-4xl mb-2">⚙️</div>
+                    <h3>Kubernetes</h3>
+                    <p class="text-sm text-slate-400">K8s cluster management</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-lg p-6 hover:border-[#FF6B00] hover:shadow-[0_0_20px_rgba(255,107,0,0.4)] transition-all">
+                    <div class="text-4xl mb-2">🐍</div>
+                    <h3>Python</h3>
+                    <p class="text-sm text-slate-400">AI/ML programming</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

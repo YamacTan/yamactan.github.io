@@ -1,4 +1,14 @@
-import type { SkillCategory } from '../types';
+export interface Skill {
+  name: string;
+  description: string;
+  icon: string; // Lucide icon name
+  span?: 'col-span-1' | 'col-span-2' | 'lg:col-span-2';
+}
+
+export interface SkillCategory {
+  category: string;
+  skills: Skill[];
+}
 
 export const skillsData: SkillCategory[] = [
   {
@@ -6,29 +16,29 @@ export const skillsData: SkillCategory[] = [
     skills: [
       {
         name: 'Kubernetes',
-        description: 'OKD/K8s cluster management & orchestration',
-        icon: '⚙️',
-        span: 'col-span-2',
+        description: 'OKD/K8s cluster orchestration, resource optimization, OADP backup solutions',
+        icon: 'Boxes',
+        span: 'lg:col-span-2',
       },
       {
         name: 'Docker',
-        description: 'Container packaging & registry',
-        icon: '🐳',
+        description: 'Container packaging, registry management, image optimization',
+        icon: 'Container',
       },
       {
         name: 'Terraform',
-        description: 'Infrastructure as Code',
-        icon: '🏗️',
+        description: 'Infrastructure as Code, multi-cloud provisioning',
+        icon: 'Code2',
       },
       {
         name: 'Helm',
-        description: 'K8s package management',
-        icon: '⛵',
+        description: 'K8s package management and templating',
+        icon: 'Package',
       },
       {
         name: 'OADP',
-        description: 'Backup & disaster recovery',
-        icon: '💾',
+        description: 'Backup, disaster recovery, data protection',
+        icon: 'HardDrive',
       },
     ],
   },
@@ -36,25 +46,25 @@ export const skillsData: SkillCategory[] = [
     category: 'Platform Engineering',
     skills: [
       {
-        name: 'CI/CD Pipelines',
-        description: 'GitHub Actions, GitLab CI, ArgoCD',
-        icon: '🚀',
-        span: 'col-span-2',
+        name: 'CI/CD Pipeline',
+        description: 'GitHub Actions, GitLab CI, deployment automation, release orchestration',
+        icon: 'Zap',
+        span: 'lg:col-span-2',
       },
       {
-        name: 'Monitoring',
-        description: 'Prometheus, Grafana, observability',
-        icon: '📊',
+        name: 'Prometheus',
+        description: 'Metrics collection, monitoring, alerting infrastructure',
+        icon: 'BarChart3',
       },
       {
         name: 'ArgoCD',
-        description: 'GitOps & continuous deployment',
-        icon: '🔄',
+        description: 'GitOps-driven deployment, continuous synchronization',
+        icon: 'GitBranch',
       },
       {
-        name: 'Resource Optimization',
-        description: 'Pod metrics & auto-scaling',
-        icon: '⚡',
+        name: 'Resource Ops',
+        description: 'Pod optimization, auto-scaling, cost management',
+        icon: 'Zap',
       },
     ],
   },
@@ -63,29 +73,29 @@ export const skillsData: SkillCategory[] = [
     skills: [
       {
         name: 'LLM Infrastructure',
-        description: 'Model deployment & inference optimization',
-        icon: '🧠',
-        span: 'col-span-2',
+        description: 'Model deployment, inference optimization, prompt engineering, vector embeddings',
+        icon: 'Brain',
+        span: 'lg:col-span-2',
       },
       {
         name: 'PyTorch',
-        description: 'Deep learning framework',
-        icon: '🔥',
+        description: 'Deep learning, neural networks, training pipelines',
+        icon: 'Flame',
       },
       {
-        name: 'Vector Databases',
-        description: 'Embedding storage & retrieval',
-        icon: '🔍',
+        name: 'Vector DBs',
+        description: 'Embedding storage, semantic search, RAG systems',
+        icon: 'Database',
       },
       {
         name: 'MLFlow',
-        description: 'Model lifecycle orchestration',
-        icon: '🔬',
+        description: 'Model lifecycle, experiment tracking, production deployment',
+        icon: 'Activity',
       },
       {
         name: 'Computer Vision',
-        description: 'Image processing pipelines',
-        icon: '👁️',
+        description: 'Image processing, object detection, pipeline optimization',
+        icon: 'Eye',
       },
     ],
   },
@@ -93,24 +103,24 @@ export const skillsData: SkillCategory[] = [
     category: 'Backend Languages',
     skills: [
       {
-        name: 'Go (Golang)',
-        description: 'Efficient systems programming',
-        icon: '🐹',
+        name: 'Go/Golang',
+        description: 'High-performance systems, CLI tools, microservices',
+        icon: 'Code',
       },
       {
         name: 'Python',
-        description: 'AI/ML & automation scripting',
-        icon: '🐍',
+        description: 'AI/ML development, automation, data processing',
+        icon: 'Code',
       },
       {
         name: 'Rust',
-        description: 'Performance & safety-critical systems',
-        icon: '⚡',
+        description: 'Performance-critical systems, safety-first design',
+        icon: 'Zap',
       },
       {
         name: 'TypeScript',
-        description: 'Node.js & modern backend',
-        icon: '📘',
+        description: 'Node.js, fullstack development, type-safe backends',
+        icon: 'Code',
       },
     ],
   },
