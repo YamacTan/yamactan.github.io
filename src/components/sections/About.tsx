@@ -13,6 +13,19 @@ export const About = () => {
       className="py-20 md:py-32"
       containerClassName="space-y-24"
     >
+      {/* Section Intro */}
+      <ScrollReveal>
+        <div className="space-y-4 max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+            Professional <span className="text-gradient">Journey</span>
+          </h2>
+          <p className="text-slate-400 text-base md:text-lg">
+            From internships to leadership roles in cloud infrastructure and AI systems. 
+            Building expertise through hands-on experience and continuous learning.
+          </p>
+        </div>
+      </ScrollReveal>
+
       {/* Timeline - Experience */}
       <ScrollReveal>
         <div className="space-y-6">
