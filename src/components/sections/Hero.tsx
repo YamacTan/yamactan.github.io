@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Button } from '../common/Button';
 import { TypewriterText } from '../effects/TypewriterText';
 import { TextGradient } from '../common/TextGradient';
 import { SectionWrapper } from '../layout/SectionWrapper';
@@ -48,24 +47,8 @@ export const Hero = () => {
         className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed"
       >
         Building scalable infrastructure, optimizing cloud platforms, and pushing the boundaries of AI systems.
-        Specializing in Kubernetes, DevOps automation, and AI infrastructure.
+        Specializing in Platform Engineering, DevOps Engineering, and AI systems.
       </motion.p>
-
-      {/* CTA Button */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className="pt-4"
-      >
-        <Button
-          href="#about"
-          variant="primary"
-          className="animate-pulse-glow text-lg"
-        >
-          Let's Build
-        </Button>
-      </motion.div>
 
       {/* Scroll Indicator */}
       <motion.div

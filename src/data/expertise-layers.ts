@@ -2,7 +2,7 @@ import type { ExpertiseTier1Skill, CoreCompetency, SupportingSkill } from '../ty
 
 // TIER 1: PRIMARY EXPERTISE (Hero Card)
 export const primaryExpertise: ExpertiseTier1Skill = {
-  name: 'Kubernetes & Container Orchestration',
+  name: 'DevOps and Platform Engineering',
   description:
     'Enterprise-scale container management and orchestration with production-grade expertise across cloud-native architectures',
   icon: 'Boxes',
@@ -12,9 +12,11 @@ export const primaryExpertise: ExpertiseTier1Skill = {
     'Multi-node Deployment & Scaling',
     'Container Orchestration & Resource Optimization',
     'RBAC & Security Configuration',
+    'Production Level Deep Expertise on RedHat Product Protfolio'
   ],
   relatedTech: [
     'Docker',
+      'Kubernetes',
     'Helm',
     'RedHat OpenShift',
     'RHEL',
