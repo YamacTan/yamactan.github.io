@@ -29,7 +29,7 @@ export const Hero = () => {
           <TextGradient>Yamaç TAN</TextGradient>
         </h1>
 
-        <div className="text-2xl md:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-white via-slate-200 to-[#FF6B00] bg-clip-text text-transparent mt-4 h-20 md:h-24">
+        <div className="text-2xl md:text-3xl lg:text-4xl font-semibold bg-gradient-to-r from-[#FF6B00] via-[#FFA500] to-[#FFB84D] bg-clip-text text-transparent mt-4 h-20 md:h-24">
           <TypewriterText
             words={typewriterWords}
             typingSpeed={80}

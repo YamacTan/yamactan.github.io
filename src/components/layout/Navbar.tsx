@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { ThemeToggle } from '../common/ThemeToggle';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -47,6 +48,9 @@ export const Navbar = () => {
               </a>
             ))}
           </div>
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
 
           {/* Mobile Menu Button */}
           <button
