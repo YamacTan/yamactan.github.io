@@ -59,7 +59,7 @@ export const coreCompetencies: CoreCompetency[] = [
   },
   {
     id: 'ai-ml-systems',
-    title: 'AI/ML Systems',
+    title: 'AIOps & MLOps',
     description:
       'Deep learning frameworks, model management, and ML infrastructure',
     icon: 'Brain',

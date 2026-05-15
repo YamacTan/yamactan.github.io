@@ -55,11 +55,11 @@ export const Contact = () => {
       {/* Email Contact */}
       <ScrollReveal>
         <div className="text-center pt-8 border-t border-white/10">
-          <p className="text-slate-400 mb-4">Or reach out directly:</p>
+          <p className="text-slate-400 mb-4">Reach out directly:</p>
           <div className="flex items-center justify-center gap-2">
             <Mail size={20} className="text-accent" />
             <a
-              href="mailto:contact@yamactan.dev"
+              href="mailto:yamac.tan@gmail.com"
               className="text-accent hover:text-orange-400 transition-colors font-mono text-lg"
             >
               contact@yamactan.dev

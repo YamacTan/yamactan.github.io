@@ -34,7 +34,7 @@ export const Footer = () => {
               Built with React, Vite & Tailwind CSS • Deployed on GitHub Pages
             </p>
             <p className="mt-2">
-              © {new Date().getFullYear()} Yamactan. All rights reserved.
+              © {new Date().getFullYear()} Yamaç TAN. All rights reserved.
             </p>
           </div>
         </div>
