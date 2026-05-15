@@ -25,14 +25,6 @@ export default {
           800: '#E55A00',
           900: '#CC4A00',
         },
-        // Neutral grays
-        slate: {
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-        },
       },
 
       boxShadow: {
@@ -42,10 +34,6 @@ export default {
         'glow-orange-xl': '0 0 60px rgba(255, 107, 0, 0.8)',
         // Glassmorphism
         'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-      },
-
-      backdropFilter: {
-        'glass': 'blur(10px)',
       },
 
       animation: {
@@ -113,7 +101,7 @@ export default {
 
       fontFamily: {
         mono: ['Fira Code', 'JetBrains Mono', 'monospace'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
 
       transitionTimingFunction: {
