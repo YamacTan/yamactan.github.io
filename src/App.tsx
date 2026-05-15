@@ -5,12 +5,10 @@ import { SkillsSection } from './components/sections/SkillsSection';
 import { Projects } from './components/sections/Projects';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
-import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-bg-primary text-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
+    <div className="min-h-screen bg-bg-primary text-white overflow-hidden">
       {/* Background gradient effect */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
@@ -29,10 +27,9 @@ function App() {
         <Contact />
       </main>
 
-        {/* Footer */}
-        <Footer />
-      </div>
-    </ThemeProvider>
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 }
 
