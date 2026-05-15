@@ -14,7 +14,7 @@ export const SkillsSection = () => {
     <SectionWrapper
       id="skills"
       className="py-20 md:py-32"
-      containerClassName="space-y-24"
+      containerClassName="space-y-16"
     >
       {/* Intro */}
       <ScrollReveal>
