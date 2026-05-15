@@ -27,7 +27,7 @@ export const Hero = () => {
         className="space-y-4"
       >
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-          Hello, I'm <TextGradient>Yamactan</TextGradient>
+          <TextGradient>Yamaç TAN</TextGradient>
         </h1>
 
         <div className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mt-4 h-20 md:h-24">

@@ -21,8 +21,8 @@ function App() {
       {/* Main Content */}
       <main className="relative">
         <Hero />
-        <About />
         <SkillsSection />
+        <About />
         <Projects />
         <Contact />
       </main>
