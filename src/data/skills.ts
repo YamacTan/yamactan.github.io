@@ -12,7 +12,7 @@ export interface SkillCategory {
 
 export const skillsData: SkillCategory[] = [
   {
-    category: 'DevOps & Infrastructure',
+    category: 'DevOps & Platform Engineering',
     skills: [
       {
         name: 'Kubernetes',
@@ -26,7 +26,7 @@ export const skillsData: SkillCategory[] = [
         icon: 'Container',
       },
       {
-        name: 'Terraform',
+        name: 'RedHat Openshift',
         description: 'Infrastructure as Code, multi-cloud provisioning',
         icon: 'Code2',
       },

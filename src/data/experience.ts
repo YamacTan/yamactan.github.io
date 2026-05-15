@@ -8,23 +8,27 @@ export const experienceData: TimelineEntry[] = [
     period: 'Oct. 2024 - Present',
     current: true,
     details: [
-      'Architect and maintain Kubernetes/OKD cluster infrastructure',
-      'Optimize resource utilization and implement cost management strategies',
-      'Design CI/CD pipelines and GitOps workflows',
-      'Implement monitoring with Prometheus and observability solutions',
-      'Collaborate with platform and development teams on infrastructure scaling',
+      'Working as a DevOps Engineer dedicated to the Data Science & Analytics Chapter, OSS Squad and GIS Squad ‑ previously supporting the AI\n' +
+      'Chapter.',
+      'Administration of multiple DevOps Platforms as Bitbucket, Harbor, Vault, Consul and internal purpose‑specific apps.',
+      'Management of DevOps Standardizaton Processes, Microservice Transformation and Solution Architechture activities for responsible teams.',
+      'Carrying out AIOps, MLOps, DataOps and Chaos Engineering studies.',
     ],
     technologies: [
       'Kubernetes/OKD',
       'Docker',
-      'Terraform',
+      'Bitbucket',
       'Prometheus',
-      'GitHub Actions',
+      'Harbor',
       'ArgoCD',
       'Go',
       'Python',
+      'Consul',
+      'Vault',
+        'Linux'
     ],
   },
+
   {
     id: 'turk-telekom',
     company: 'Türk Telekom',
@@ -32,20 +36,24 @@ export const experienceData: TimelineEntry[] = [
     period: 'Dec. 2022 - Oct. 2024',
     current: false,
     details: [
-      'Managed production Kubernetes clusters supporting enterprise applications',
-      'Implemented infrastructure automation using Terraform and Ansible',
-      'Developed monitoring dashboards and alerting systems',
-      'Participated in incident response and root cause analysis',
-      'Contributed to platform reliability and SRE practices',
+      'Working as Cloud Platform & DevOps Engineer in Cloud Platform Operations Team.',
+      'Administration of multiple RedHat Openshift Platforms for various projects and applications.',
+      'PaaS Administration of multiple projects of Türk Telekom which are launched on Openshift.',
+      'Providing L1 support for Openshift and DevOps platforms for internal users.',
+      'Providing L2 support and carrying out primary operations of the External Customer PaaS Service named ”TT PAAS”.',
+      'Providing AI/ML consultancy for internal projects and teams.',
+      'Carrying out active development and coordination studies of various PoCs.',
+      'RedHat Vendor dedicated studies in different domains and perspectives.'
     ],
     technologies: [
-      'Kubernetes',
-      'Docker',
-      'Terraform',
+      'RedHat Openshift',
+      'RHEL',
+      'Ansible',
+      'Redhat ACM',
       'Prometheus/Grafana',
       'Ansible',
+      'GitLab',
       'Linux',
-      'Python',
       'Bash',
     ],
   },
@@ -56,16 +64,14 @@ export const experienceData: TimelineEntry[] = [
     period: 'Feb. 2022 - Aug. 2022',
     current: false,
     details: [
-      'Built computer vision pipelines for industrial automation',
-      'Developed deep learning models using PyTorch and TensorFlow',
-      'Optimized model inference for edge deployment',
-      'Collaborated on dataset preprocessing and augmentation',
-      'Implemented evaluation metrics and performance benchmarking',
+      'Working as a Data Scientist ‑ AI Engineer in domestic and international R&D projects carried out within the company.',
+      'Responsible for data science operations, middleware solution architecture and machine learning activities in projects.'
     ],
     technologies: [
       'Python',
       'PyTorch',
       'TensorFlow',
+      'Keras',
       'OpenCV',
       'CUDA',
       'Computer Vision',
@@ -80,11 +86,8 @@ export const experienceData: TimelineEntry[] = [
     period: 'Oct. 2020 - Jul. 2021',
     current: false,
     details: [
-      'Developed machine learning models for anomaly detection',
-      'Preprocessed and analyzed large datasets',
-      'Implemented feature engineering pipelines',
-      'Participated in model validation and testing',
-      'Collaborated with cross-functional teams on AI initiatives',
+      'Working on AI&ML softwares related to flight control, swarm flight algorithms and sensor fusion of UAV’s in AI and Big Data Department.',
+      'Real time object detection and tracking on NVIDIA Jetson Platforms, Autopilot softwares for UAV’s.'
     ],
     technologies: [
       'Python',
@@ -103,17 +106,13 @@ export const experienceData: TimelineEntry[] = [
     period: 'Aug. 2020 - Sep. 2020',
     current: false,
     details: [
-      'Learned enterprise infrastructure and cloud platforms',
-      'Assisted with network and systems administration tasks',
-      'Participated in knowledge transfer and team projects',
-      'Gained practical experience in telecom infrastructure',
+      'As a result of the tests and interviews applied, I became one of the 50 interns selected among 4400+ people who applied to the ”Türk Telekom\n' +
+      'START 2020” internship program.',
+      'While continuing the trainings and workshops within the scope of the START program, I worked as a Mobility Intern in the Mobility Department\n' +
+      'which is responsible for backend services and digital products of IoT, smart systems, smart cities and digitalization.'
     ],
     technologies: [
-      'Linux',
-      'Networking',
-      'Cloud Platforms',
-      'Bash',
-      'System Administration',
+          ''
     ],
   },
 ];

@@ -57,3 +57,20 @@ export interface EducationEntry {
   details?: string[];
   skills?: string[];
 }
+
+export interface AcademicProject {
+  id: string;
+  title: string;
+  year: string;
+  description?: string;
+}
+
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  category: 'cloud-devops' | 'ai-ml' | 'programming';
+  credentialUrl?: string;
+  credentialId?: string;
+}

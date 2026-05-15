@@ -3,6 +3,8 @@ import { SectionWrapper } from '../layout/SectionWrapper';
 import { ScrollReveal } from '../effects/ScrollReveal';
 import { BentoCard } from '../common/BentoCard';
 import { ExpandableTimelineCard } from '../common/ExpandableTimelineCard';
+import { AcademicProjects } from './AcademicProjects';
+import { Certificates } from './Certificates';
 import { skillsData } from '../../data/skills';
 import { experienceData } from '../../data/experience';
 import { educationData } from '../../data/education';
@@ -122,6 +124,16 @@ export const About = () => {
             ))}
           </div>
         </div>
+      </ScrollReveal>
+
+      {/* Academic Projects Section */}
+      <ScrollReveal>
+        <AcademicProjects />
+      </ScrollReveal>
+
+      {/* Certificates Section */}
+      <ScrollReveal>
+        <Certificates />
       </ScrollReveal>
     </SectionWrapper>
   );

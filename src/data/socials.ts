@@ -21,7 +21,7 @@ export const socialsData: Social[] = [
   },
   {
     name: 'Email',
-    url: 'mailto:contact@yamactan.dev',
+    url: 'mailto:yamac.tan@gmail.com',
     icon: 'Mail',
     label: 'Send Email',
   },
