@@ -33,6 +33,13 @@ export const SupportingSkills = ({ skills }: SupportingSkillsProps) => {
   );
 
   const currentSkills = skills[activeCategory] || [];
+  
+  // Calculate skill counts for each category
+  const skillCounts = {
+    programming: skills.programming?.length || 0,
+    databases: skills.databases?.length || 0,
+    devtools: skills.devtools?.length || 0,
+  };
 
   return (
     <div className="space-y-8">
@@ -87,7 +94,7 @@ export const SupportingSkills = ({ skills }: SupportingSkillsProps) => {
                   ${isActive ? 'text-black' : 'text-slate-500'}
                 `}
               >
-                ({currentSkills.length})
+                ({skillCounts[category]})
               </span>
             </motion.button>
           );

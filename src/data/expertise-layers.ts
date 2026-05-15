@@ -4,7 +4,7 @@ import type { ExpertiseTier1Skill, CoreCompetency, SupportingSkill } from '../ty
 export const primaryExpertise: ExpertiseTier1Skill = {
   name: 'DevOps and Platform Engineering',
   description:
-    'Enterprise-scale container management and orchestration with production-grade expertise across cloud-native architectures',
+    'Enterprise-scale DevOps and Platform Engineering with production-grade expertise across cloud-native architectures',
   icon: 'Boxes',
   achievements: [
     'Kubernetes Cluster Management & Optimization',

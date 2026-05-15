@@ -30,7 +30,7 @@ export const Navbar = () => {
               <span className="text-black font-bold text-lg">Y</span>
             </div>
             <span className="font-bold text-white hidden sm:inline">
-              yamactan
+              Yamaç TAN
             </span>
           </a>
 
