@@ -17,24 +17,24 @@ export const Navbar = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] md:w-auto"
-    >
+    // Outer container - Fixed positioning, full width centering
+    <div className="fixed top-6 left-0 right-0 z-50 w-full flex justify-center px-4 md:px-0 pointer-events-none">
+      {/* Inner capsule container */}
       <motion.nav
         layout
         transition={{ duration: 0.3, ease: 'easeInOut' }}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
         className={`
           relative
           backdrop-blur-md bg-neutral-900/70
           border border-white/10
           transition-all duration-300
           flex items-center justify-between
+          pointer-events-auto
           ${isOpen 
             ? 'w-full rounded-2xl px-6 py-6' 
-            : 'max-w-4xl rounded-full px-6 md:px-8 py-3.5 md:py-4 shadow-lg'
+            : 'w-full max-w-4xl rounded-full px-6 md:px-8 py-3.5 md:py-4 shadow-lg'
           }
         `}
       >
@@ -118,53 +118,53 @@ export const Navbar = () => {
             )}
           </AnimatePresence>
         </motion.button>
-      </motion.nav>
 
-      {/* Mobile Menu - Expanded inside capsule */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 right-0 mt-0 w-full"
-          >
-            <div className="flex flex-col gap-2 pt-4 pb-6 px-6">
-              {navLinks.map((link, index) => (
-                <motion.a
-                  key={link.href}
-                  href={link.href}
-                  onClick={handleNavClick}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className="relative px-4 py-3 text-slate-400 transition-all duration-300 group rounded-lg"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  {/* Hover pill background */}
-                  <motion.div
-                    className="absolute inset-0 bg-[#FF6B00]/10 rounded-lg -z-10"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                  
-                  {/* Link text */}
-                  <motion.span
-                    className="relative text-sm font-medium"
-                    initial={{ color: '#cbd5e1' }}
-                    whileHover={{ color: '#FF6B00' }}
-                    transition={{ duration: 0.3 }}
+        {/* Mobile Menu - Expanded inside capsule */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="absolute top-full left-0 right-0 mt-0 w-full rounded-b-2xl"
+            >
+              <div className="flex flex-col gap-2 pt-4 pb-6 px-6">
+                {navLinks.map((link, index) => (
+                  <motion.a
+                    key={link.href}
+                    href={link.href}
+                    onClick={handleNavClick}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="relative px-4 py-3 text-slate-400 transition-all duration-300 group rounded-lg"
+                    whileHover={{ scale: 1.02 }}
                   >
-                    {link.label}
-                  </motion.span>
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
+                    {/* Hover pill background */}
+                    <motion.div
+                      className="absolute inset-0 bg-[#FF6B00]/10 rounded-lg -z-10"
+                      initial={{ opacity: 0 }}
+                      whileHover={{ opacity: 1 }}
+                      transition={{ duration: 0.3 }}
+                    />
+                    
+                    {/* Link text */}
+                    <motion.span
+                      className="relative text-sm font-medium"
+                      initial={{ color: '#cbd5e1' }}
+                      whileHover={{ color: '#FF6B00' }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {link.label}
+                    </motion.span>
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.nav>
+    </div>
   );
 };
