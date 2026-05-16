@@ -124,7 +124,7 @@ export const Projects = () => {
       <ScrollReveal>
         <div className="text-center pt-8">
           <p className="text-slate-400 mb-6">
-            Interested in exploring more projects?
+            Interested in exploring more projects? More is on the way!
           </p>
           <Button
             href="https://github.com/yamactan"

@@ -1,34 +1,37 @@
 import type { Project } from '../types';
 
 export const projectsData: Project[] = [
-  {
-    id: 'k8s-resource-optimizer',
-    title: 'K8s Resource Optimizer',
+
+    {
+        id: 'must-gather-analyzer',
+        title: 'Must Gather Analyzer',
+        description:
+            'An OpenSource tool for analyzing Must Gather Logs for Openshift/OKD clusters.',
+        technologies: ['Typescript', 'React', 'Vite', 'Tailwind CSS'],
+        github: 'https://github.com/YamacTan/mustgatheranalyzer',
+        liveDemo: undefined,
+        featured: true,
+    },
+    {
+    id: 'consul-vault-generator',
+    title: '.NET Consul-Vault Generator',
     description:
-      'An automated Kubernetes tool that monitors Prometheus metrics to dynamically adjust pod requests and limits, reducing resource slack and optimizing cluster efficiency.',
-    technologies: ['Go', 'Kubernetes API', 'Prometheus', 'React', 'Tailwind CSS'],
-    github: 'https://github.com/yamactan/k8s-resource-optimizer',
+      'A simple tool that converts application configuration files (e.g. appsettings.json) into Vault import JSON and Consul Template files.',
+    technologies: ['Python', 'Consul', 'Vault'],
+    github: 'https://github.com/YamacTan/config-to-secrets-converter',
     liveDemo: undefined,
     featured: true,
   },
   {
-    id: 'yamco-cve-feed',
-    title: 'Yamço CVE Feed',
+    id: 'employee-attrition',
+    title: 'Employee Attrition Prediction',
     description:
-      'A minimalist, security-focused vulnerability monitoring dashboard tracking specific tech stack CVEs with automated alerts and real-time updates.',
-    technologies: ['Python', 'FastAPI', 'React', 'Tailwind CSS'],
-    github: 'https://github.com/yamactan/yamco-cve-feed',
+      'Python Flask Deployment of the Employee Attrition Prediction project which was carried out within the scope of Turkcell Data Science Bootcamp Final Project.',
+    technologies: ['Python', 'Flask', 'Scikit-learn', 'Pandas'],
+    github: 'https://github.com/YamacTan/EmployeeAttritionPrediction_FlaskDeployment',
     liveDemo: undefined,
     featured: true,
   },
-  {
-    id: 'chaos-platform',
-    title: 'Chaos Platform Engineering Tool',
-    description:
-      'A cloud-native chaos engineering platform designed for OpenShift/OKD clusters to simulate infrastructure failures and test resiliency.',
-    technologies: ['Go', 'Kubernetes/OKD', 'Docker', 'Prometheus'],
-    github: 'https://github.com/yamactan/chaos-platform',
-    liveDemo: undefined,
-    featured: true,
-  },
+
+    //TODO: Must-gather analyzer ekle.
 ];
