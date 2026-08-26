@@ -13,7 +13,7 @@ export const SkillsSection = () => {
   return (
     <SectionWrapper
       id="skills"
-      className="py-20 md:py-32"
+      className="pt-20 pb-12 md:pt-32 md:pb-20"
       containerClassName="space-y-16"
     >
       {/* Intro */}
