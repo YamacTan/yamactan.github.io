@@ -11,7 +11,7 @@ export const Contact = () => {
   return (
     <SectionWrapper
       id="contact"
-      className="pt-20 pb-12 md:pt-32 md:pb-20"
+      className="pt-20 pb-6 md:pt-32 md:pb-12"
       containerClassName="max-w-2xl mx-auto space-y-12"
     >
       {/* Section Title */}

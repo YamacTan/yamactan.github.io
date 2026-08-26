@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <SectionWrapper
       id="about"
-      className="pt-20 pb-12 md:pt-32 md:pb-20"
+      className="pt-20 pb-6 md:pt-32 md:pb-12"
       containerClassName="space-y-24"
     >
       {/* Section Intro */}
