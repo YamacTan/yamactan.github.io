@@ -6,9 +6,9 @@ import { ArrowDown } from 'lucide-react';
 
 export const Hero = () => {
   const typewriterWords = [
-    'DevOps Engineer',
+    'Senior DevOps Engineer',
+    'Senior Cloud Platform Engineer',
     'Solution Architect',
-    'Platform Engineer',
     'AI/ML Expert',
   ];
 
