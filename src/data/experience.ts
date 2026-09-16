@@ -5,7 +5,7 @@ export const experienceData: TimelineEntry[] = [
     id: 'turknet-current',
     company: 'TurkNet',
     position: 'DevOps Engineer',
-    period: 'Oct. 2024 - Present',
+    period: 'Oct. 2024 - Sep. 2026',
     current: true,
     details: [
       'Working as a DevOps Engineer dedicated to the Data Science & Analytics Chapter, OSS Squad and GIS Squad ‑ previously supporting the AI\n' +
