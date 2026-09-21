@@ -2,11 +2,9 @@ import { ScrollReveal } from '../effects/ScrollReveal';
 import { SectionWrapper } from '../layout/SectionWrapper';
 import { FeaturedSkill } from './FeaturedSkill';
 import { CoreCompetencies } from './CoreCompetencies';
-import { SupportingSkills } from './SupportingSkills';
 import {
   primaryExpertise,
   coreCompetencies,
-  supportingSkills,
 } from '../../data/expertise-layers';
 
 export const SkillsSection = () => {
@@ -43,11 +41,6 @@ export const SkillsSection = () => {
       {/* Tier 2: Core Competencies */}
       <ScrollReveal>
         <CoreCompetencies competencies={coreCompetencies} />
-      </ScrollReveal>
-
-      {/* Tier 3: Supporting Skills */}
-      <ScrollReveal>
-        <SupportingSkills skills={supportingSkills} />
       </ScrollReveal>
     </SectionWrapper>
   );
