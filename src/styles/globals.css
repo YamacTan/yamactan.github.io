@@ -70,7 +70,7 @@
   }
 
   .section-container {
-    @apply min-h-screen py-20 px-4 md:px-8 flex items-center justify-center;
+    @apply relative min-h-screen py-20 px-4 md:px-8 flex items-center justify-center;
   }
 
   .tech-card {

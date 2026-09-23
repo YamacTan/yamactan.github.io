@@ -4,13 +4,13 @@ export const socialsData: Social[] = [
   {
     name: 'GitHub',
     url: 'https://github.com/yamactan',
-    icon: 'Github',
+    icon: 'GitBranch',
     label: 'GitHub Profile',
   },
   {
     name: 'LinkedIn',
     url: 'https://linkedin.com/in/yamactan',
-    icon: 'Linkedin',
+    icon: 'Users',
     label: 'LinkedIn Profile',
   },
   {
@@ -21,8 +21,8 @@ export const socialsData: Social[] = [
   },
   {
     name: 'Email',
-    url: 'mailto:yamac.tan@gmail.com',
+    url: 'mailto:hello@yamactan.com',
     icon: 'Mail',
     label: 'Send Email',
-  },
+  }
 ];

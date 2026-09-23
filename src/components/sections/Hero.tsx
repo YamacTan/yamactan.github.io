@@ -1,7 +1,6 @@
 import { TypewriterText } from '../effects/TypewriterText';
 import { TextGradient } from '../common/TextGradient';
 import { SectionWrapper } from '../layout/SectionWrapper';
-import { ArrowDown } from 'lucide-react';
 
 export const Hero = () => {
   const typewriterWords = [
@@ -36,10 +35,6 @@ export const Hero = () => {
         Focused on SRE, DevOps, and high-performance solution design.
         Engineering robust foundations that empower intelligent systems and complex ecosystems.
       </p>
-
-      <div className="absolute bottom-10 text-accent">
-        <ArrowDown size={32} />
-      </div>
     </SectionWrapper>
   );
 };

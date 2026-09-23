@@ -62,6 +62,8 @@ export const Contact = () => {
               href="mailto:hello@yamactan.com"
               className="text-accent hover:text-orange-400 transition-colors font-mono text-lg"
             >
+
+              
               hello@yamactan.com
             </a>
           </div>
