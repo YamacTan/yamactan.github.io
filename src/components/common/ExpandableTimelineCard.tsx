@@ -36,10 +36,10 @@ export const ExpandableTimelineCard = ({
         onClick={() => setIsExpanded(!isExpanded)}
         className="
           w-full text-left p-4 md:p-6 rounded-xl
-          bg-neutral-900/40 backdrop-blur-md
+          bg-neutral-900/95
           border border-white/10
           hover:border-[#FF6B00]/30 hover:bg-neutral-900/60
-          transition-all duration-300
+          transition-colors duration-300
           cursor-pointer
           focus:outline-none focus:ring-2 focus:ring-[#FF6B00]/50
         "
@@ -90,7 +90,7 @@ export const ExpandableTimelineCard = ({
             <div
               className="
                 mt-2 p-4 md:p-6 rounded-xl rounded-t-none
-                bg-neutral-900/30 backdrop-blur-md
+                bg-neutral-900/95
                 border border-t-0 border-white/10
                 border-[#FF6B00]/20
               "

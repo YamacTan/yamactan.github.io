@@ -34,10 +34,10 @@ export const AcademicProjects = () => {
               <div
                 className="
                   h-full p-4 md:p-5 rounded-lg
-                  bg-neutral-900/40 backdrop-blur-md
+                  bg-neutral-900/95
                   border border-white/10
                   hover:border-[#FF6B00]/30 hover:bg-neutral-900/60
-                  transition-all duration-300
+                  transition-colors duration-300
                   cursor-default
                   flex flex-col justify-between
                 "

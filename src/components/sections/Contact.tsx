@@ -42,7 +42,7 @@ export const Contact = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-4 rounded-lg glass-effect-md border border-slate-700 hover:border-accent hover:shadow-glow-orange transition-all duration-300 group"
+                className="p-4 rounded-lg glass-effect-md border border-slate-700 hover:border-accent hover:shadow-md transition-colors duration-300 group"
                 aria-label={social.label}
               >
                 <Icon size={24} className="text-slate-400 group-hover:text-accent transition-colors" />

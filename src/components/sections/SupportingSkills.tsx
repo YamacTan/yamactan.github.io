@@ -69,10 +69,10 @@ export const SupportingSkills = ({ skills }: SupportingSkillsProps) => {
               onClick={() => setActiveCategory(category)}
               className={`
                 flex items-center gap-2 px-4 py-2.5 rounded-lg
-                transition-all duration-300 font-medium
+                transition-transform duration-300 font-medium
                 ${
                   isActive
-                    ? 'bg-[#FF6B00] text-black border border-[#FF6B00] shadow-[0_0_20px_rgba(255,107,0,0.3)]'
+                    ? 'bg-[#FF6B00] text-black border border-[#FF6B00] shadow-md'
                     : 'bg-neutral-900/40 text-slate-400 border border-white/10 hover:border-[#FF6B00]/30'
                 }
               `}
@@ -128,11 +128,11 @@ export const SupportingSkills = ({ skills }: SupportingSkillsProps) => {
                 <div
                   className="
                     p-4 rounded-lg
-                    bg-neutral-900/40 backdrop-blur-md
+                    bg-neutral-900/95
                     border border-white/10
                     hover:border-[#FF6B00]/30 hover:bg-neutral-900/60
-                    transition-all duration-300
-                    hover:shadow-[0_0_20px_rgba(255,107,0,0.15)]
+                    transition-colors duration-300
+                    hover:shadow-md
                     flex flex-col items-center justify-center
                     gap-2 min-h-[100px]
                     group cursor-default

@@ -27,9 +27,9 @@ export const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         className={`
           relative
-          backdrop-blur-md bg-neutral-900/70
+          bg-neutral-900/95
           border border-white/10
-          transition-all duration-300
+          transition-opacity duration-300
           flex items-center justify-between
           pointer-events-auto
           ${isOpen 
@@ -45,7 +45,7 @@ export const Navbar = () => {
           onClick={handleNavClick}
         >
           <motion.div 
-            className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FF6B00] to-orange-600 flex items-center justify-center group-hover:shadow-glow-orange transition-all duration-300"
+            className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#FF6B00] to-orange-600 flex items-center justify-center group-hover:shadow-md transition-transform duration-300"
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-black font-bold text-lg">Y</span>
@@ -62,7 +62,7 @@ export const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={handleNavClick}
-              className="relative px-3 py-2 text-slate-400 transition-all duration-300 group"
+              className="relative px-3 py-2 text-slate-400 transition-transform duration-300 group"
               whileHover={{ scale: 1.05 }}
             >
               {/* Hover pill background */}
@@ -138,7 +138,7 @@ export const Navbar = () => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
-                    className="relative px-4 py-3 text-slate-400 transition-all duration-300 group rounded-lg"
+                    className="relative px-4 py-3 text-slate-400 transition-transform duration-300 group rounded-lg"
                     whileHover={{ scale: 1.02 }}
                   >
                     {/* Hover pill background */}

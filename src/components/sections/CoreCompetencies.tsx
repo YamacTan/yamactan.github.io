@@ -45,11 +45,11 @@ export const CoreCompetencies = ({ competencies }: CoreCompetenciesProps) => {
               <div
                 className="
                   h-full p-6 rounded-xl
-                  bg-neutral-900/40 backdrop-blur-md
+                  bg-neutral-900/95
                   border border-white/10
                   hover:border-[#FF6B00]/30 hover:bg-neutral-900/60
-                  transition-all duration-300
-                  hover:shadow-[0_0_30px_rgba(255,107,0,0.15)]
+                  transition-colors duration-300
+                  hover:shadow-md
                   flex flex-col justify-between
                   cursor-default
                 "

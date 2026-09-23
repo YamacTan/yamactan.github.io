@@ -9,7 +9,7 @@ export const Badge = ({
   variant = 'default',
   className = '',
 }: BadgeProps) => {
-  const baseStyles = 'inline-flex items-center px-3 py-1 rounded-full text-sm font-medium transition-all duration-300';
+  const baseStyles = 'inline-flex items-center px-3 py-1 rounded-full text-sm font-medium';
 
   const variants = {
     default: 'bg-white/10 text-slate-400 border border-white/10',

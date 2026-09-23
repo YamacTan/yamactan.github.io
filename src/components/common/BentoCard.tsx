@@ -34,11 +34,11 @@ export const BentoCard = ({
       <div
         className="
           h-full rounded-2xl p-6 md:p-8
-          bg-neutral-900/50 backdrop-blur-md
+          bg-neutral-900/95
           border border-white/10
-          transition-all duration-300
+          transition-colors duration-300
           hover:border-[#FF6B00]/50 hover:bg-neutral-900/70
-          hover:shadow-[0_0_30px_rgba(255,107,0,0.15)]
+          hover:shadow-md
           cursor-default
         "
       >
@@ -62,7 +62,7 @@ export const BentoCard = ({
                 className="
                   flex-shrink-0 p-2.5 rounded-lg
                   bg-white/5 group-hover:bg-[#FF6B00]/10
-                  transition-all duration-300
+                  transition-colors duration-300
                 "
               >
                 <IconComponent size={24} className="text-[#FF6B00]" />
@@ -75,7 +75,7 @@ export const BentoCard = ({
         <div
           className="
             absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#FF6B00] to-transparent
-            w-0 group-hover:w-full transition-all duration-500
+            w-0 group-hover:w-full transition-opacity duration-500
           "
         />
       </div>

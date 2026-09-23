@@ -31,41 +31,41 @@
 /* Utility classes */
 @layer components {
   .glass-effect {
-    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-lg;
+    @apply bg-neutral-900/95 border border-white/10 rounded-lg;
   }
 
   .glass-effect-md {
-    @apply backdrop-blur-md bg-white/[0.08] border border-white/[0.15] rounded-xl;
+    @apply bg-neutral-900/95 border border-white/[0.15] rounded-xl;
   }
 
   .glow-border {
     @apply border-2 border-[#FF6B00];
-    box-shadow: 0 0 20px rgba(255, 107, 0, 0.3), inset 0 0 20px rgba(255, 107, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.18);
   }
 
   .btn-accent {
     @apply px-6 py-3 bg-[#FF6B00] text-black font-semibold rounded-lg 
-           transition-all duration-300 cursor-pointer
-           hover:shadow-[0_0_20px_rgba(255,107,0,0.4)] hover:scale-105 
+           transition-transform duration-300 cursor-pointer
+           hover:shadow-md hover:scale-105
            active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
   }
 
   .btn-accent-outline {
     @apply px-6 py-3 border-2 border-[#FF6B00] text-[#FF6B00] rounded-lg 
-           transition-all duration-300 cursor-pointer
+           transition-colors duration-300 cursor-pointer
            hover:bg-[#FF6B00] hover:text-black 
-           hover:shadow-[0_0_20px_rgba(255,107,0,0.4)];
+           hover:shadow-md;
   }
 
   .btn-secondary {
     @apply px-4 py-2 border border-slate-700 text-slate-400 rounded-md 
-           transition-all duration-300 cursor-pointer
-           hover:border-[#FF6B00] hover:text-[#FF6B00] hover:shadow-[0_0_20px_rgba(255,107,0,0.4)];
+           transition-colors duration-300 cursor-pointer
+           hover:border-[#FF6B00] hover:text-[#FF6B00] hover:shadow-md;
   }
 
   .card-hover {
-    @apply transition-all duration-300 
-           hover:shadow-[0_0_20px_rgba(255,107,0,0.4)] hover:scale-105 
+          @apply transition-transform duration-300
+            hover:shadow-md hover:scale-105
            hover:border-[#FF6B00];
   }
 
@@ -76,8 +76,8 @@
   .tech-card {
     @apply glass-effect-md p-6 rounded-xl 
            border border-slate-700 
-           transition-all duration-300 
-           hover:border-[#FF6B00] hover:shadow-[0_0_20px_rgba(255,107,0,0.4)]
+           transition-transform duration-300
+           hover:border-[#FF6B00] hover:shadow-md
            hover:scale-105 hover:bg-white/[0.12];
   }
 
@@ -105,8 +105,8 @@
   textarea {
     @apply bg-white/5 border border-white/10 rounded-lg px-4 py-2
            text-white placeholder-slate-500
-           transition-all duration-300
-           focus:outline-none focus:border-[#FF6B00] focus:shadow-[0_0_20px_rgba(255,107,0,0.4)];
+           transition-colors duration-300
+           focus:outline-none focus:border-[#FF6B00] focus:shadow-md;
   }
 
   textarea {
@@ -140,5 +140,5 @@ a[href^="#"] {
 
 /* Glassmorphism effect refinement */
 .backdrop-glass {
-  backdrop-filter: blur(10px) brightness(1.05);
+  background-color: rgb(23 23 23 / 95%);
 }

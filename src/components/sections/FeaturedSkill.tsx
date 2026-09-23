@@ -29,11 +29,11 @@ export const FeaturedSkill = ({
         className="
           relative overflow-hidden rounded-2xl p-8 md:p-10
           bg-gradient-to-br from-neutral-900/80 to-neutral-900/40
-          backdrop-blur-md border border-[#FF6B00]/30
+          border border-[#FF6B00]/30
           hover:border-[#FF6B00]/50
-          transition-all duration-500
-          shadow-[0_0_60px_rgba(255,107,0,0.15)]
-          hover:shadow-[0_0_80px_rgba(255,107,0,0.25)]
+          transition-colors duration-500
+          shadow-lg
+          hover:shadow-xl
         "
       >
         <div
@@ -105,7 +105,7 @@ export const FeaturedSkill = ({
         <div
           className="
             absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#FF6B00] via-[#FF6B00] to-transparent
-            w-0 group-hover:w-full transition-all duration-700
+            w-0 group-hover:w-full transition-opacity duration-700
           "
         />
       </div>

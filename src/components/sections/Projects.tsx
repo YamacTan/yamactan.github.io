@@ -57,7 +57,7 @@ export const Projects = () => {
         {projectsData.map((project) => (
           <motion.div key={project.id} variants={itemVariants}>
             <Card
-              className="h-full p-6 flex flex-col justify-between hover:scale-105 hover:shadow-glow-orange-lg"
+              className="h-full p-6 flex flex-col justify-between hover:scale-105 hover:shadow-lg"
               hover={true}
             >
               {/* Project Header */}

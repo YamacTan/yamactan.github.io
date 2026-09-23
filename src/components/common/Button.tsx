@@ -21,7 +21,7 @@ export const Button = ({
   target = '_self',
   rel = '',
 }: ButtonProps) => {
-  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300';
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-lg transition-transform duration-300';
 
   const variants = {
     primary: 'btn-accent',

@@ -14,14 +14,14 @@ export const Card = ({
   hover = true,
   variant = 'default',
 }: CardProps) => {
-  const baseStyles = 'rounded-xl border transition-all duration-300';
+  const baseStyles = 'rounded-xl border transition-transform duration-300';
 
   const variants = {
     default: 'glass-effect-md border-slate-700',
     glow: 'glow-border',
   };
 
-  const hoverStyles = hover ? 'hover:border-accent hover:shadow-glow-orange hover:scale-105 hover:bg-white/[0.12]' : '';
+  const hoverStyles = hover ? 'hover:border-accent hover:shadow-md hover:scale-105 hover:bg-white/[0.12]' : '';
 
   return (
     <motion.div
