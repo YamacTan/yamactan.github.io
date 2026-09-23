@@ -54,7 +54,7 @@ export const coreCompetencies: CoreCompetency[] = [
     title: 'Security & Registry',
     description: 'Container security, secrets management, and service mesh',
     icon: 'Shield',
-    technologies: ['Vault', 'Consul', 'Harbor', 'DefectDojo', 'Sonarqube', 'Open Policy Agent (OPA)', 'Kyverno'],
+    technologies: ['Vault', 'Istio', 'Sonarqube', 'Open Policy Agent (OPA)', 'Kyverno'],
     span: 'col-span-1',
   },
   {
