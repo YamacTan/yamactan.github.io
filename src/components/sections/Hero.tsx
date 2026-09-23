@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { TypewriterText } from '../effects/TypewriterText';
 import { TextGradient } from '../common/TextGradient';
 import { SectionWrapper } from '../layout/SectionWrapper';
@@ -17,13 +16,7 @@ export const Hero = () => {
       className="pt-40 md:pt-48"
       containerClassName="flex flex-col items-center justify-center gap-8 text-center"
     >
-      {/* Main Heading */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.1 }}
-        className="space-y-4"
-      >
+      <div className="space-y-4">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
           <TextGradient>Yamaç TAN, M.Sc.</TextGradient>
         </h1>
@@ -36,28 +29,17 @@ export const Hero = () => {
             delayBetweenWords={2500}
           />
         </div>
-      </motion.div>
+      </div>
 
-      {/* Subtitle */}
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed"
-      >
+      <p className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
         Designing resilient platforms and scalable cloud-native architectures.
         Focused on SRE, DevOps, and high-performance solution design.
         Engineering robust foundations that empower intelligent systems and complex ecosystems.
-      </motion.p>
+      </p>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-10 text-accent"
-      >
+      <div className="absolute bottom-10 text-accent">
         <ArrowDown size={32} />
-      </motion.div>
+      </div>
     </SectionWrapper>
   );
 };

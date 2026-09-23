@@ -59,10 +59,10 @@ export const Contact = () => {
           <div className="flex items-center justify-center gap-2">
             <Mail size={20} className="text-accent" />
             <a
-              href="mailto:yamac.tan@gmail.com"
+              href="mailto:hello@yamactan.com"
               className="text-accent hover:text-orange-400 transition-colors font-mono text-lg"
             >
-              contact@yamactan.dev
+              hello@yamactan.com
             </a>
           </div>
         </div>

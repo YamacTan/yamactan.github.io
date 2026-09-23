@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import * as Icons from 'lucide-react';
 import type { CoreCompetency } from '../../types';
 import { Badge } from '../common/Badge';
@@ -12,7 +11,6 @@ interface CoreCompetenciesProps {
 export const CoreCompetencies = ({ competencies }: CoreCompetenciesProps) => {
   return (
     <div className="space-y-8">
-      {/* Section Title */}
       <div className="space-y-3">
         <div className="flex items-center gap-3">
           <div className="h-8 w-1 bg-gradient-to-b from-[#FF6B00] to-transparent rounded-full" />
@@ -25,18 +23,13 @@ export const CoreCompetencies = ({ competencies }: CoreCompetenciesProps) => {
         </p>
       </div>
 
-      {/* Bento Grid */}
-      <motion.div
+      <div
         className="
           grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4
           auto-rows-max lg:auto-rows-[220px]
         "
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, staggerChildren: 0.08 }}
       >
-        {competencies.map((competency, index) => {
+        {competencies.map((competency) => {
           const IconComponent = Icons[
             competency.icon as IconName
           ] as React.ComponentType<{
@@ -45,12 +38,8 @@ export const CoreCompetencies = ({ competencies }: CoreCompetenciesProps) => {
           }> | undefined;
 
           return (
-            <motion.div
+            <div
               key={competency.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
               className={`${competency.span || 'col-span-1'} group`}
             >
               <div
@@ -65,7 +54,6 @@ export const CoreCompetencies = ({ competencies }: CoreCompetenciesProps) => {
                   cursor-default
                 "
               >
-                {/* Header with Icon */}
                 <div className="space-y-4 flex-1">
                   <div className="flex items-start justify-between gap-3">
                     <h4 className="text-lg md:text-xl font-semibold text-white group-hover:text-[#FF6B00] transition-colors leading-snug flex-1">
@@ -81,35 +69,27 @@ export const CoreCompetencies = ({ competencies }: CoreCompetenciesProps) => {
                     )}
                   </div>
 
-                  {/* Description */}
                   <p className="text-sm text-slate-400 leading-relaxed">
                     {competency.description}
                   </p>
                 </div>
 
-                {/* Technologies */}
                 <div className="pt-4 border-t border-white/10 space-y-3">
                   <div className="flex flex-wrap gap-2">
-                    {competency.technologies.map((tech, techIndex) => (
-                      <motion.div
-                        key={tech}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: (index * 0.08 + techIndex * 0.05) }}
-                      >
+                    {competency.technologies.map((tech) => (
+                      <div key={tech}>
                         <Badge variant="default" className="text-xs">
                           {tech}
                         </Badge>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           );
         })}
-      </motion.div>
+      </div>
     </div>
   );
 };
